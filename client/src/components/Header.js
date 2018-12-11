@@ -1,5 +1,6 @@
 import React,{Component} from "react";
 import {Link} from "react-router-dom";
+import GoogleAuth from "./GoogleAuth";
 
 class Header extends Component {
     render() {
@@ -9,13 +10,11 @@ class Header extends Component {
                     <Link to="/" className="header item">
                         Twitch TV
                     </Link>
-                    <Link to="/" className="item">
-                        Streams
-                    </Link>
                     <div className="right menu">
                         <Link to="/" className="item">
-                        Login
+                          Streams
                         </Link>
+                        <GoogleAuth className="item"/>
                     </div>
                   </div>
             </div>
